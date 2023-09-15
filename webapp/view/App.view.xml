@@ -1,0 +1,22 @@
+<mvc:View 
+    controllerName="mynamespace.customcontrol.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:prefix="mynamespace.customcontrol.control"
+>
+    <App id="app">
+        <Page id="page" title="{i18n>title}">
+            <content>
+
+            <VBox>
+                <prefix:ProductRating id="CtrlPersonalizado01" class="sapUiSmallMarginBeginEnd" change=".onRatingChange"/>
+                <prefix:ProductRating id="CtrlPersonalizado02" class="sapUiSmallMarginBeginEnd" change=".onRatingChange"/>
+                <prefix:ProductRating id="CtrlPersonalizado03"  class="sapUiSmallMarginBeginEnd" change=".onRatingChange"/>
+                <Button text="Resetea controles personalizados" press="onResetCtrlPersonalizado"  class="sapUiMediumMargin" type="Critical" />
+            </VBox>
+
+            </content>
+        </Page>
+    </App>
+</mvc:View>
